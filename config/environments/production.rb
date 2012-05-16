@@ -20,6 +20,10 @@ KitchensinkTorqueboxMobile::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  config.assets.paths << Rails.root.join("assets/stylesheets/css", "assets/javascripts/js/libs")
+
+  config.assets.precompile += %w( *.css *.js )
+
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
