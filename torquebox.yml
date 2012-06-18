@@ -6,3 +6,8 @@ web:
   context: "/"
 ruby:
   version: 1.9
+
+services:
+  ResetMembers:
+    config:
+      description: ResetMembers service
